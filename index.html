@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Estúdio Distorção: escola de música, salas de ensaio e estúdio de gravação em Blumenau (SC).">
+    <title>Estúdio Distorção | Escola de música e estúdio</title>
+
+    <!-- Fontes da identidade visual: Bebas Neue (títulos) e Inter (textos) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS próprio (carregado depois do Bootstrap para personalizar os componentes) -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ================= CABEÇALHO / MENU ================= -->
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-distorcao" aria-label="Menu principal">
+            <div class="container">
+                <a class="navbar-brand" href="#home">
+                    <img src="imagens/logo.svg" alt="Estúdio Distorção" class="logo-menu">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+                        <li class="nav-item"><a class="nav-link" href="#home">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre nós</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#loja">Loja</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                        <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                            <a class="btn btn-destaque" href="#aula-experimental">Agende uma aula experimental</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ================= HOME ================= -->
+        <section id="home">
+
+            <!-- Carrossel -->
+            <div id="carrosselHome" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carrosselHome" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carrosselHome" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carrosselHome" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="imagens/banner-aulas.jpg" class="d-block w-100 foco-esquerda" alt="Guitarrista tocando guitarra elétrica sob luz vermelha">
+                        <div class="carousel-caption legenda-direita">
+                            <span class="legenda-topo">Aulas de instrumento</span>
+                            <h2>Aprenda a tocar o som que você curte</h2>
+                            <p>Canto, teclado, guitarra, baixo, violão, ukulele e bateria com professores que tocam na noite.</p>
+                            <a href="#servicos" class="btn btn-destaque">Conheça as aulas</a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="imagens/banner-ensaio.jpg" class="d-block w-100 foco-centro" alt="Banda ensaiando em estúdio com bateria, guitarra e saxofone">
+                        <div class="carousel-caption legenda-direita">
+                            <span class="legenda-topo">Salas de ensaio</span>
+                            <h2>Sua banda com estrutura de verdade</h2>
+                            <p>Salas com tratamento acústico, amplificadores e bateria prontos para ligar.</p>
+                            <a href="#servicos" class="btn btn-destaque">Ver salas</a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="imagens/banner-gravacao.jpg" class="d-block w-100 foco-direita" alt="Microfone condensador em estúdio de gravação">
+                        <div class="carousel-caption">
+                            <span class="legenda-topo">Gravação e mixagem</span>
+                            <h2>Grave sua música em Blumenau</h2>
+                            <p>Do primeiro take à faixa masterizada, com acompanhamento técnico em todas as etapas.</p>
+                            <a href="#contato" class="btn btn-destaque">Fale com a gente</a>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carrosselHome" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carrosselHome" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+
+            <!-- Boas-vindas e destaques -->
+            <div class="container secao">
+                <div class="row justify-content-center text-center mb-5">
+                    <div class="col-lg-8">
+                        <h1 class="titulo-secao">Bem-vindo ao Estúdio Distorção</h1>
+                        <p class="lead">
+                            Aqui quem está começando aprende a tocar e quem já tem banda ensaia e grava no mesmo
+                            lugar. Somos uma escola de música e um estúdio feitos por músicos, para músicos.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <article class="destaque">
+                            <span class="destaque-numero">01</span>
+                            <h3>Aulas individuais</h3>
+                            <p>Plano de estudo montado para o seu nível e para o estilo que você quer tocar.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="destaque">
+                            <span class="destaque-numero">02</span>
+                            <h3>Salas de ensaio</h3>
+                            <p>Equipamento revisado, ar-condicionado e reserva por hora, inclusive à noite.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="destaque">
+                            <span class="destaque-numero">03</span>
+                            <h3>Gravação</h3>
+                            <p>Estúdio com técnico de som para gravar singles, EPs e demos da sua banda.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SOBRE NÓS ================= -->
+        <section id="sobre" class="secao secao-escura">
+            <div class="container">
+                <div class="row align-items-center g-4 g-lg-5">
+                    <div class="col-lg-6">
+                        <img src="imagens/sobre-estudio.jpg" class="img-fluid imagem-sobre" alt="Banda ensaiando em estúdio com tratamento acústico">
+                    </div>
+
+                    <div class="col-lg-6">
+                        <h2 class="titulo-secao">Sobre nós</h2>
+                        <p>
+                            O Estúdio Distorção nasceu em 2016, numa garagem no bairro Velha, em Blumenau, quando
+                            dois músicos de bandas da cidade decidiram transformar o espaço onde ensaiavam em um lugar
+                            aberto a quem quisesse aprender e tocar.
+                        </p>
+                        <p>
+                            Hoje ocupamos uma casa com três salas de aula, duas salas de ensaio com tratamento
+                            acústico e um estúdio de gravação. Já passaram por aqui mais de 800 alunos e dezenas de
+                            bandas da região.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row g-4 mt-4">
+                    <div class="col-md-4">
+                        <article class="bloco-institucional">
+                            <h3>Missão</h3>
+                            <p>
+                                Ensinar música de forma prática e oferecer estrutura profissional para que alunos e
+                                bandas evoluam tocando o que gostam.
+                            </p>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="bloco-institucional">
+                            <h3>Visão</h3>
+                            <p>
+                                Ser a principal referência em ensino musical e estrutura para bandas no Vale do Itajaí
+                                até 2030.
+                            </p>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="bloco-institucional">
+                            <h3>Valores</h3>
+                            <ul class="lista-valores">
+                                <li>Paixão pela música</li>
+                                <li>Respeito a todos os estilos e níveis</li>
+                                <li>Prática acima da teoria decorada</li>
+                                <li>Pontualidade e transparência</li>
+                                <li>Incentivo à cena musical local</li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SERVIÇOS ================= -->
+        <section id="servicos" class="secao">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="titulo-secao">Serviços</h2>
+                    <p class="text-secundario">Clique em "Ver detalhes" para saber tudo sobre cada serviço.</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-sm-6 col-lg-3">
+                        <article class="card card-servico h-100">
+                            <img src="imagens/servico-aulas.jpg" class="card-img-top" alt="Aluna tocando violão no estúdio">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title">Aulas de instrumento</h3>
+                                <p class="card-text">Canto, teclado, guitarra, baixo, violão de aço, violão clássico, ukulele e bateria.</p>
+                                <p class="preco mt-auto">A partir de R$ 90,00 / aula</p>
+                                <button type="button" class="btn btn-contorno" data-bs-toggle="modal"
+                                    data-bs-target="#modalServico" data-servico="aulas">Ver detalhes</button>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3">
+                        <article class="card card-servico h-100">
+                            <img src="imagens/servico-ensaio.jpg" class="card-img-top" alt="Sala de ensaio com amplificadores e baixo">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title">Sala de ensaio</h3>
+                                <p class="card-text">Salas equipadas e com tratamento acústico, reservadas por hora.</p>
+                                <p class="preco mt-auto">R$ 50,00 / hora</p>
+                                <button type="button" class="btn btn-contorno" data-bs-toggle="modal"
+                                    data-bs-target="#modalServico" data-servico="ensaio">Ver detalhes</button>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3">
+                        <article class="card card-servico h-100">
+                            <img src="imagens/servico-gravacao.jpg" class="card-img-top" alt="Microfone na sala de gravação com técnico ao fundo">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title">Gravação</h3>
+                                <p class="card-text">Gravação multipista com técnico de som para bandas e artistas solo.</p>
+                                <p class="preco mt-auto">R$ 120,00 / hora</p>
+                                <button type="button" class="btn btn-contorno" data-bs-toggle="modal"
+                                    data-bs-target="#modalServico" data-servico="gravacao">Ver detalhes</button>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3">
+                        <article class="card card-servico h-100">
+                            <img src="imagens/servico-mixagem.jpg" class="card-img-top" alt="Mesa de som digital iluminada">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title">Mixagem e master</h3>
+                                <p class="card-text">Sua música finalizada e pronta para as plataformas digitais.</p>
+                                <p class="preco mt-auto">R$ 250,00 / faixa</p>
+                                <button type="button" class="btn btn-contorno" data-bs-toggle="modal"
+                                    data-bs-target="#modalServico" data-servico="mixagem">Ver detalhes</button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= LOJA (catálogo dinâmico + carrinho) ================= -->
+        <section id="loja" class="secao secao-escura">
+            <div class="container">
+                <div class="text-center mb-4">
+                    <h2 class="titulo-secao">Loja</h2>
+                    <p class="text-secundario">Acessórios, cordas, vestuário e pacotes de aulas e ensaios.</p>
+                </div>
+
+                <!-- Filtros e busca -->
+                <div class="row g-3 align-items-center mb-4">
+                    <div class="col-lg-8">
+                        <div class="filtros" id="filtrosCategoria">
+                            <button type="button" class="btn btn-filtro ativo" data-categoria="todos">Todos</button>
+                            <button type="button" class="btn btn-filtro" data-categoria="acessorios">Acessórios</button>
+                            <button type="button" class="btn btn-filtro" data-categoria="cordas">Cordas</button>
+                            <button type="button" class="btn btn-filtro" data-categoria="vestuario">Vestuário</button>
+                            <button type="button" class="btn btn-filtro" data-categoria="pacotes">Pacotes</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <label for="buscaProduto" class="visually-hidden">Pesquisar produto</label>
+                        <input type="search" id="buscaProduto" class="form-control" placeholder="Pesquisar produto pelo nome">
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Produtos (preenchidos pelo catalogo.js) -->
+                    <div class="col-lg-8">
+                        <p id="resultadoBusca" class="text-secundario small mb-3"></p>
+                        <div class="row g-4" id="listaProdutos"></div>
+                    </div>
+
+                    <!-- Carrinho -->
+                    <div class="col-lg-4">
+                        <aside class="carrinho" aria-labelledby="tituloCarrinho">
+                            <h3 id="tituloCarrinho">Carrinho <span class="contador" id="contadorCarrinho">0</span></h3>
+                            <ul class="lista-carrinho" id="itensCarrinho"></ul>
+                            <div class="total-carrinho">
+                                <span>Total</span>
+                                <strong id="totalCarrinho">R$ 0,00</strong>
+                            </div>
+                            <button type="button" class="btn btn-destaque w-100" id="btnFinalizar">Finalizar compra</button>
+                            <button type="button" class="btn btn-link link-limpar w-100" id="btnLimpar">Esvaziar carrinho</button>
+                            <div class="mensagem-carrinho" id="mensagemCarrinho" role="status"></div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CONTATO ================= -->
+        <section id="contato" class="secao">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="titulo-secao">Contato</h2>
+                    <p class="text-secundario">Agende sua aula experimental ou fale com a gente sobre ensaios, gravações e pedidos da loja.</p>
+                </div>
+
+                <!-- Informações de contato -->
+                <div class="row g-4 mb-5 info-contato">
+                    <div class="col-sm-6 col-lg-3">
+                        <h3>Endereço</h3>
+                        <address>Rua dos Amplificadores, 220<br>Bairro Velha, Blumenau/SC<br>CEP 89036-000</address>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <h3>Telefone</h3>
+                        <p><a href="tel:+554730304567">(47)&nbsp;3030&#8209;4567</a></p>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <h3>E-mail</h3>
+                        <p><a href="mailto:contato@estudiodistorcao.com.br">contato@estudiodistorcao.com.br</a></p>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <h3>Horário de atendimento</h3>
+                        <p>Terça a sexta: 9h às 23h<br>Sábado: 9h às 18h</p>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Fale conosco -->
+                    <div class="col-lg-6">
+                        <article class="painel h-100">
+                            <h3>Fale conosco</h3>
+                            <p class="text-secundario">Ensaios, gravações, orçamentos e pedidos da loja.</p>
+
+                            <form id="formContato" novalidate>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="nome" class="form-label">Nome completo</label>
+                                        <input type="text" class="form-control" id="nome" name="nome">
+                                        <div class="invalid-feedback" id="erroNome"></div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label for="telefone" class="form-label">Telefone</label>
+                                        <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="(47) 99999-9999">
+                                        <div class="invalid-feedback" id="erroTelefone"></div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <label for="email" class="form-label">E-mail</label>
+                                        <input type="email" class="form-control" id="email" name="email">
+                                        <div class="invalid-feedback" id="erroEmail"></div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <label for="assunto" class="form-label">Assunto</label>
+                                        <select class="form-select" id="assunto" name="assunto">
+                                            <option value="">Selecione...</option>
+                                            <option value="ensaio">Sala de ensaio</option>
+                                            <option value="gravacao">Gravação</option>
+                                            <option value="mixagem">Mixagem e master</option>
+                                            <option value="loja">Loja e pedidos</option>
+                                            <option value="outro">Outro assunto</option>
+                                        </select>
+                                        <div class="invalid-feedback" id="erroAssunto"></div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <label for="mensagem" class="form-label">Mensagem</label>
+                                        <textarea class="form-control" id="mensagem" name="mensagem" rows="4"></textarea>
+                                        <div class="invalid-feedback" id="erroMensagem"></div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-contorno">Enviar mensagem</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <div id="retornoFormulario" class="mt-3" role="status"></div>
+                        </article>
+                    </div>
+
+                    <!-- Aula experimental -->
+                    <div class="col-lg-6">
+                        <article id="aula-experimental" class="painel painel-destaque h-100">
+                            <span class="selo">Primeira aula gratuita</span>
+                            <h3>Agende sua aula experimental</h3>
+                            <p class="text-secundario">Escolha o curso e o melhor horário. Confirmamos pelo WhatsApp em até 1 dia útil.</p>
+
+                            <form id="formAula" novalidate>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="expNome" class="form-label">Nome completo</label>
+                                        <input type="text" class="form-control" id="expNome" name="expNome">
+                                        <div class="invalid-feedback" id="erroExpNome"></div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label for="expTelefone" class="form-label">WhatsApp</label>
+                                        <input type="tel" class="form-control" id="expTelefone" name="expTelefone" placeholder="(47) 99999-9999">
+                                        <div class="invalid-feedback" id="erroExpTelefone"></div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <label for="expEmail" class="form-label">E-mail</label>
+                                        <input type="email" class="form-control" id="expEmail" name="expEmail">
+                                        <div class="invalid-feedback" id="erroExpEmail"></div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label for="expCurso" class="form-label">Curso</label>
+                                        <select class="form-select" id="expCurso" name="expCurso">
+                                            <option value="">Selecione...</option>
+                                            <option value="canto">Canto e Técnica Vocal</option>
+                                            <option value="teclado">Teclado</option>
+                                            <option value="guitarra">Guitarra</option>
+                                            <option value="baixo">Baixo</option>
+                                            <option value="violao-aco">Violão de Aço</option>
+                                            <option value="violao-classico">Violão Clássico</option>
+                                            <option value="ukulele">Ukulele</option>
+                                            <option value="bateria">Bateria</option>
+                                        </select>
+                                        <div class="invalid-feedback" id="erroExpCurso"></div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label for="expNivel" class="form-label">Seu nível</label>
+                                        <select class="form-select" id="expNivel" name="expNivel">
+                                            <option value="">Selecione...</option>
+                                            <option value="nunca">Nunca toquei</option>
+                                            <option value="iniciante">Iniciante</option>
+                                            <option value="intermediario">Intermediário</option>
+                                            <option value="avancado">Avançado</option>
+                                        </select>
+                                        <div class="invalid-feedback" id="erroExpNivel"></div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label for="expDia" class="form-label">Dia preferido</label>
+                                        <select class="form-select" id="expDia" name="expDia">
+                                            <option value="">Selecione...</option>
+                                            <option value="terca">Terça-feira</option>
+                                            <option value="quarta">Quarta-feira</option>
+                                            <option value="quinta">Quinta-feira</option>
+                                            <option value="sexta">Sexta-feira</option>
+                                            <option value="sabado">Sábado</option>
+                                        </select>
+                                        <div class="invalid-feedback" id="erroExpDia"></div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <fieldset class="grupo-periodo" id="grupoPeriodo">
+                                            <legend class="form-label">Período</legend>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="periodo" id="periodoManha" value="manha">
+                                                <label class="form-check-label" for="periodoManha">Manhã</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="periodo" id="periodoTarde" value="tarde">
+                                                <label class="form-check-label" for="periodoTarde">Tarde</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="periodo" id="periodoNoite" value="noite">
+                                                <label class="form-check-label" for="periodoNoite">Noite</label>
+                                            </div>
+                                            <div class="invalid-feedback" id="erroExpPeriodo"></div>
+                                        </fieldset>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-destaque">Agendar aula experimental</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <div id="retornoAula" class="mt-3" role="status"></div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= MODAL DOS SERVIÇOS (conteúdo preenchido pelo main.js) ================= -->
+    <div class="modal fade modal-distorcao" id="modalServico" tabindex="-1" aria-labelledby="modalServicoTitulo">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="modalServicoTitulo">Serviço</h2>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-md-5">
+                            <img src="imagens/servico-aulas.jpg" alt="Foto do serviço" class="img-fluid rounded" id="modalServicoImagem">
+                        </div>
+                        <div class="col-md-7">
+                            <p id="modalServicoDescricao"></p>
+                            <ul class="lista-modal" id="modalServicoItens"></ul>
+                            <p class="preco mb-0" id="modalServicoPreco"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-contorno" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-destaque" id="btnAgendarServico">Quero agendar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= RODAPÉ ================= -->
+    <footer class="rodape">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-5">
+                    <img src="imagens/logo.svg" alt="Estúdio Distorção" class="logo-rodape mb-3">
+                    <p>Escola de música, salas de ensaio e estúdio de gravação em Blumenau (SC) desde 2016.</p>
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <h3>Navegação</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#sobre">Sobre nós</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#loja">Loja</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    <h3>Contato</h3>
+                    <ul class="list-unstyled">
+                        <li>Rua dos Amplificadores, 220</li>
+                        <li>Blumenau/SC</li>
+                        <li>(47) 3030-4567</li>
+                        <li>contato@estudiodistorcao.com.br</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+            <p class="copyright">
+                &copy; 2026 Estúdio Distorção. Todos os direitos reservados.<br>
+                Empresa fictícia criada para projeto acadêmico por Jarbas de Morais Ferreira Junior.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS (navbar, carrossel e modal) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript próprio -->
+    <script src="js/main.js"></script>
+    <script src="js/catalogo.js"></script>
+</body>
+
+</html>
